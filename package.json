@@ -1,0 +1,56 @@
+{
+  "name": "address-to-census-tract-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that turns a US address or latitude and longitude into its census tract, block group, block, county FIPS, congressional and state legislative districts, from the US Census Bureau Geocoder.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/address-to-census-tract-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/address-to-census-tract-mcp"
+  },
+  "homepage": "https://www.mcpstamp.com/servers/",
+  "bin": {
+    "address-to-census-tract-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "start": "node dist/stdio.js",
+    "deploy": "npx wrangler@4 deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "census-tract",
+    "census-tract-lookup",
+    "address-to-census-tract",
+    "census-geocoder",
+    "geocoding",
+    "fips",
+    "geoid",
+    "block-group",
+    "congressional-district",
+    "us-census"
+  ]
+}

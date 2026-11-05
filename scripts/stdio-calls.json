@@ -1,0 +1,5 @@
+[
+  ["get_census_tract_for_address", { "address": "1 Dr Carlton B Goodlett Pl, San Francisco, CA 94102" }],
+  ["get_census_tract_for_coordinates", { "latitude": 41.8827, "longitude": -87.6237 }],
+  ["explain_census_geoid", { "geoid": "060750124053007" }]
+]

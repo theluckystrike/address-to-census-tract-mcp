@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.theluckystrike/address-to-census-tract-mcp",
+  "title": "Address to Census Tract MCP",
+  "description": "US address to census tract, block group, county FIPS and districts, from the Census Geocoder.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/theluckystrike/address-to-census-tract-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://address-to-census-tract-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
